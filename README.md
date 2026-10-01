@@ -72,7 +72,8 @@ Controller Connected*.
 ### Patch your disc image
 
 You need a clean `.wbfs` or `.iso` of the game. Download the patcher for your
-system from the releases page, or run it from source (needs Python 3 with
+system from the releases page (or the artifacts of the latest CI run), or run
+it from source (needs Python 3 with
 tkinter and [Wiimms ISO Tool](https://wit.wiimm.de/) (`wit`) on your `PATH`):
 
 ```bash
