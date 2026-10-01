@@ -1,0 +1,159 @@
+{
+ "feature": "sd",
+ "title": "SDHC card support",
+ "region": "REXE01",
+ "ops": [
+  {
+   "t": "hook",
+   "site": 2148249176,
+   "orig": 2424045568,
+   "payload": [
+    2424045568,
+    1415866366,
+    1017151552,
+    2424664924,
+    0
+   ],
+   "tramp": 2147489824,
+   "note": "ISD_GetDeviceStatus: remember whether the card is SDHC"
+  },
+  {
+   "t": "hook",
+   "site": 2148246348,
+   "orig": 1415578591,
+   "payload": [
+    1415578591,
+    1082261512,
+    1415578327,
+    0
+   ],
+   "tramp": 2147489856,
+   "note": "get_disk_info: accept an SDHC card IOS has not marked initialized"
+  },
+  {
+   "t": "hook",
+   "site": 2148247772,
+   "orig": 2158034956,
+   "payload": [
+    2153840660,
+    1415774803,
+    1099038760,
+    939524105,
+    2153840652,
+    1415824062,
+    946012161,
+    482542592,
+    1012957196,
+    946055452,
+    2087256998,
+    1317012512,
+    2158034956,
+    0
+   ],
+   "tramp": 2147489872,
+   "note": "get_total_sectors: CSD v2 capacity"
+  },
+  {
+   "t": "hook",
+   "site": 2148250984,
+   "orig": 2080636992,
+   "payload": [
+    1031831616,
+    2173465436,
+    738983936,
+    1099038728,
+    2088772472,
+    2080636992,
+    0
+   ],
+   "tramp": 2147489936,
+   "note": "ISD_ReadMultiBlockAsync: block offsets are always aligned"
+  },
+  {
+   "t": "hook",
+   "site": 2148251812,
+   "orig": 2080636992,
+   "payload": [
+    1031831616,
+    2173465436,
+    738983936,
+    1099038728,
+    2088772472,
+    2080636992,
+    0
+   ],
+   "tramp": 2147489968,
+   "note": "ISD_WriteMultiBlockAsync: block offsets are always aligned"
+  },
+  {
+   "t": "hook",
+   "site": 2148246788,
+   "orig": 2133144022,
+   "payload": [
+    1031831616,
+    2173465436,
+    738983936,
+    1099038732,
+    2092510072,
+    1207959560,
+    2133144022,
+    1417676543,
+    0
+   ],
+   "tramp": 2147490000,
+   "note": "physical_read: sector -> block address"
+  },
+  {
+   "t": "hook",
+   "site": 2148247280,
+   "orig": 2133144022,
+   "payload": [
+    1031831616,
+    2173465436,
+    738983936,
+    1099038732,
+    2092510072,
+    1207959560,
+    2133144022,
+    1417676543,
+    0
+   ],
+   "tramp": 2147490048,
+   "note": "physical_write: sector -> block address"
+  },
+  {
+   "t": "hook",
+   "site": 2148247128,
+   "orig": 2134489620,
+   "payload": [
+    1031831616,
+    2173465436,
+    738983936,
+    1099038732,
+    993591297,
+    1207959560,
+    2134489620,
+    0
+   ],
+   "tramp": 2147490096,
+   "note": "physical_read: advance one block"
+  },
+  {
+   "t": "hook",
+   "site": 2148247620,
+   "orig": 2134489620,
+   "payload": [
+    1031831616,
+    2173465436,
+    738983936,
+    1099038732,
+    993591297,
+    1207959560,
+    2134489620,
+    0
+   ],
+   "tramp": 2147490128,
+   "note": "physical_write: advance one block"
+  }
+ ]
+}
