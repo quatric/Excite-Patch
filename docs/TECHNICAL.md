@@ -71,6 +71,11 @@ Two hooks use that:
   `acc.z ← −stickX`, normalised to ±1 with a dead zone) and drives the HOME
   Menu pointer from it. With a pad connected the stick overrides the remote's tilt.
 
+Port N feeds KPAD channel N (SI result registers are 12 bytes apart, KPAD structs
+`0x400`). The game polls all four channels every frame but is a two-player game
+(`Pause:MISSING_CTRL_0/1` are the only controller-missing screens); in Dolphin, pad 1
+and pad 2 drove channels 0 and 1 independently, and channels 2-3 stayed idle.
+
 The pad is detected purely by the error/valid bits of its own result word, so
 nothing is stored anywhere.
 

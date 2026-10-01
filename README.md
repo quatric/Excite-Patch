@@ -28,8 +28,10 @@ Controller patch on the USA release. **Not yet tested on a real Wii** — see
 
 **Known limits:**
 
-- a Wii Remote must still be connected. GameCube port 1 drives player 1; ports 2-4
-  are wired the same way but untested
+- a Wii Remote must still be connected for each player. GameCube port 1 drives
+  player 1 and port 2 drives player 2 (checked in Dolphin with both pads active
+  at once). The game only has two local players — its controller-missing screens
+  stop at player 2 — so ports 3 and 4 have nothing to drive
 - plug the GameCube pad in **before** starting the game; hot-plugging is not handled
 - the patched pad replaces the remote's tilt only while a GameCube pad answers —
   unplug it to steer with the remote again
