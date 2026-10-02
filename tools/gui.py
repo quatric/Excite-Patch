@@ -59,8 +59,8 @@ class App(BASE):
         self.sd = tk.BooleanVar(value=True)
         tk.Checkbutton(opts, text='SDHC card support (custom soundtrack from cards over 2 GB)',
                        variable=self.sd, command=self.sync_ios).pack(anchor='w')
-        self.ios = tk.BooleanVar(value=True)
-        self.ios_cb = tk.Checkbutton(opts, text='    ... and make the disc ask for IOS 58 (a real Wii needs this for SDHC)',
+        self.ios = tk.BooleanVar(value=False)
+        self.ios_cb = tk.Checkbutton(opts, text='    ... and make the disc ask for IOS 58 (SDHC on a real Wii; try without if remotes misbehave)',
                                      variable=self.ios)
         self.ios_cb.pack(anchor='w')
 

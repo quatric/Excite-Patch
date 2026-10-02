@@ -127,9 +127,12 @@ you; the Gecko and Riivolution files are named by it.
   off** for this game when using the patched image.
 - **SDHC cards:** the game asks for IOS 9, which predates SDHC cards (the game even
   has a message for an IOS refusing one: "SDHC card inserted; card is not
-  supported"). Tick *make the disc ask for IOS 58* in the patcher (the rebuilt
-  disc is fake-signed, like any patched image), or set the game's IOS to 58 in
-  your loader's settings.
+  supported"). Either tick *make the disc ask for IOS 58* in the patcher (off by
+  default; the rebuilt disc is fake-signed, like any patched image) or set an
+  SDHC-capable IOS for the game in your loader's settings. Changing the IOS also
+  changes what runs the Wii Remotes' Bluetooth, and this 2006 game was built for
+  IOS 9: if the remotes or pads stop responding after switching IOS, switch back and
+  use the SDHC patch only with a card of 2 GB or less, or try another IOS.
 - Connect the GameCube controller **before** launching the game.
 - Put your MP3s in a folder named `EXCITE TRUCK` on the card. The game looks there
   first and, if it finds nothing, searches the whole card for `.mp3` files.
